@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabell</title>
+    <style>
+
+        Body{
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: paleturquoise;
+        }
+        thead tr{
+            border-bottom: 4px solid peachpuff;
+        }
+        tbody tr{
+            border-bottom: 1px solid peachpuff;
+        }
+        th,  td{
+            /*12px over og under. 14px venstre og høyre*/
+            padding: 12px 14px;
+            text-align: center;
+        }
+
+        tbody tr:hover{
+            background-color: darkorange;
+            color: white;
+        }
+
+        tr.nedrykk{
+            background-color: lightcoral;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Superhelt</th>
+                <th>Erkefinde</th>
+                <th>Hjemby</th>
+            </tr>
+
+        </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Supermann</td>
+            <td>Den meget skummle Lex Luthor</td>
+            <td>Metropolis</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>Jokeren</td>
+            <td>Arkem City</td>
+        </tr>
+        <tr class="nedrykk">
+            <td>Wonderwomen</td>
+            <td>Pingvinen</td>
+            <td>New York</td>
+        </tr>
+    </tbody>
+
+    </table>
+
+
+
+</body>
+</html>
