@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animasjons Oppgave </title>
+
+    <style>
+
+
+        body {
+            margin:0;
+            padding:0;
+            background: url("2._MAD_12003_Chaoyang_Park_Plaza_i_02_overview_with_city_context.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        @keyframes mannwalk {
+            to {
+                background-position: 0 -6500px;
+            }
+        }
+
+        .box {
+            width: 500px;
+            height: 800px;
+            background: rgba(0,0,0,0.4);
+            padding: 50px;
+            margin: auto;
+        }
+
+
+        .Mann {
+            background-image: url("animasjon oppgave-01.png");
+            width: 500px;
+            height: 500px; /* 1/12 av høyden på bilde*/
+            animation: mannwalk 1.5s steps(13) infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 3px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <h1>Jump man</h1>
+        <div class="Mann"></div>
+    </div>
+
+</body>
+</html>
