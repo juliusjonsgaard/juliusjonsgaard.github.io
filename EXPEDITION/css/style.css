@@ -1,0 +1,139 @@
+* {
+ margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+
+header > nav{
+    position: fixed; /*bruker dette får å få bildet under naven*/
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);/*gjør at man kan se gjennom naven*/
+    z-index: 99;
+    text-align: center;
+}
+
+/* unseeded på naven */
+header > nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: "Open sans",Helvetica, Arial, sans-serif;
+    padding: 10px 6px 10px 6px;
+    font-size: 18px;
+}
+
+header > nav a:hover{
+    color: white;
+    border-bottom: 4px solid white;
+}
+nav {
+    height: 50px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: "Open sans",Helvetica, Arial, sans-serif;
+    padding: 10px 6px 10px 6px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+/* dette er secen for bildene */
+.sect {
+    height: 100%;
+    background-color: gainsboro;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* gjør at bilde ikke rører på seg når man scroller*/
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 250px;
+    font-family: Geneva;
+    font-size: 150px;
+    color: #2d3d48;
+    letter-spacing: 4px;
+}
+
+h2{
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: lightgrey;
+    letter-spacing: 4px;
+    font-family: Geneva ,sans-serif;
+}
+
+h4{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+h7,h8,h9 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+ul {
+    margin: 0;
+    padding:0;
+}
+
+li {
+   display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+
+.subSection {
+    height: 50%;
+    background-color: #222222;
+}
+
+.sectOne {
+    background-image: url("../images/original.jpg");
+}
+
+.sectTwo {
+    background-image: url("../images/Blog-Berlin-move.jpg");
+}
+
+.sectThree{
+    background-image: url("../images/santorini-travel-holidays-vacation-161275.jpeg");
+}
