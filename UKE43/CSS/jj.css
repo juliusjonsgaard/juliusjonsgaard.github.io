@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,h8,p{
+  margin-bottom: 20px;
+}
+
+header > nav{
+  position: fixed; /*bruker dette får å få bildet under naven*/
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,.5);/*gjør at man kan se gjennom naven*/
+  z-index: 99;
+  text-align: center;
+}
+
+header > nav a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "Open sans",Helvetica, Arial, sans-serif;
+  padding: 10px 6px 10px 6px;
+  font-size: 18px;
+}
+
+nav {
+  height: 50px;
+  text-align: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "Open sans",Helvetica, Arial, sans-serif;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+/* dette er secen for bildene */
+.sect {
+  height: 100%;
+  background-color: gainsboro;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* gjør at bilde ikke rører på seg når man scroller*/
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: 250px;
+  font-family: Geneva;
+  font-size: 150px;
+  color: #2d3d48;
+  letter-spacing: 4px;
+}
+
+h2{
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+  color: lightgrey;
+  letter-spacing: 4px;
+  font-family: Geneva ,sans-serif;
+}
+
+h3,h4,h6,h5,h8{
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+}
+
+.subSection {
+  height: 30%;
+  background-color: #222222;
+}
+
+.sectOne {
+  background-image: url("../BILDER/maxresdefault.jpg")
+}
+
+.sectTwo {
+  background-image: url("../BILDER/f1bcf36650f8d76222fcccd450c8de55.jpg");
+}
+
+.sectThree{
+  background-image: url("../BILDER/P4so2PXC1CVHbgjJDgxFEjp6.jpeg");
+}
+
+.sectFour{
+  background-image: url("../BILDER/social-media-addiction.jpg");
+}
+
