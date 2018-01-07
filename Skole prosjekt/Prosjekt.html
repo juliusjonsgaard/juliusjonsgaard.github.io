@@ -1,0 +1,90 @@
+
+
+    <!DOCTYPE html>
+    <html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jonsgaard real estate</title>
+
+        <link rel="stylesheet" href="css/real_estate.css">
+
+
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <img src="logo.png"/>
+                <a href="vacation.html">VACATION IDEAS</a>
+               <a href="Hus.html">PROPERTIES</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </header>
+
+
+        <div class="sect sectOne">
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="subSection">
+
+            <h2>Jonsgård Real Estate</h2>
+            <p>We are a worldwide collection of top brokers representing the finest luxury properties across the globe, Who’s Who Jonsgård Real Estate has been leading
+                the real estate industry since 2000. This hand-selected group of more than 130,000
+                professionals with properties in more than 70 countries collectively sells over
+                $300 billion of real estate annually,making it the most elite and comprehensive
+                luxury real estate network in the world.</p>
+
+            <p>Who’s Who in Jonsgård Real Estate’s global network is showcased on JonsgårdRealEstate.com,
+                which remains the #1 portal for luxury properties on the web and has more $1,000,000+
+                content than any near-peer. The company has been recognized as a leader in the industry
+                by Forbes, The Webby Awards, Web Marketing Association, Maggie Awards, ADDY Awards,
+                the Inc. 5000 List, and more.</p>
+
+            <nav>
+
+                <a href="https://www.facebook.com"><img src="facebook logo.png" height="50" width="50"/></a>
+                <a href="https://twitter.com"><img src="twitter logo.png" height="50" width="50"/></a>
+                <a href="https://github.com"><img src="github logo.png" height="50" width="50"/></a>
+                <a href="https://www.instagram.com"><img src="instagram logo.png" height="50" width="50"/></a>
+            </nav>
+
+            </div>
+
+
+
+        </div>
+
+        <script>
+            var sectOne = document.querySelector(".sectOne");
+            var bilder = [  "home-improvement.png",
+                            "business-insurance.jpg",
+                            "retreat-the-modern-house-in-nature-01.jpg",
+                            "home-improvement2.png",
+                            "home-improvement6.png",
+                            "Modern-House-Designs-2017.jpg",
+                            ];
+
+            var i = 1;
+            function byttBilde() {
+                var bilde = bilder[i];
+
+                console.log(bilde);
+                sectOne.style.backgroundImage = "url(css/" + bilde + ")";
+                i++;
+                if(i >= bilder.length) {
+                    i = 0;
+                }
+            }
+
+            setInterval(byttBilde, 2000);
+
+        </script>
+
+    </body>
+
+
