@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+
+/* Texst starter her */
+    h1 {
+      font-family: "Work Sans", Arial, sans-serif;
+      text-align: center;
+      width: 100%;
+      height: 500px;
+      position: relative;
+      top: 350px;
+      font-size: 45px;
+      color: whitesmoke;
+      letter-spacing: 4px;
+    }
+
+    h2, h3{
+      color: #000;
+      font-family: "Work Sans", Arial, sans-serif;
+      font-weight: 300;
+      margin: 0 0 30px 0;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 1.5em;
+      }
+
+
+    .ptext{
+      position:absolute;
+      top:50%;
+      width:100%;
+      text-align:center;
+      color:#000;
+      font-size:27px;
+      letter-spacing:8px;
+      text-transform:uppercase;
+    }
+
+
+/*Nav start*/
+
+
+    header > nav{
+      position: absolute; /*bruker dette får å få bildet under naven*/
+      width: 100%;
+      height: 50px;
+      z-index: 99;
+      text-align: center;
+    }
+
+    /* unseeded på naven */
+    header > nav a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      font-family: "Open sans",Helvetica, Arial, sans-serif;
+      padding: 10px 6px 10px 6px;
+      font-size: 18px;
+    }
+
+    header > nav a:hover{
+      color: white;
+      border-bottom: 4px solid white;
+    }
+    nav {
+      height: 50px;
+      text-align: center;
+    }
+
+    nav a{
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      font-family: "Open sans",Helvetica, Arial, sans-serif;
+      padding: 10px 6px 10px 6px;
+      font-size: 18px;
+    }
+
+    nav a:hover{
+      color: white;
+      border-bottom: 4px solid white;
+    }
+
+    nav > img {
+    position: absolute;
+    width: 90px;
+    left: 10px;
+    top: 8px;
+}
+
+
+/* Bilder*/
+
+      .pimg1, .pimg2, .pimg3, .pimg4{
+        position:relative;
+        opacity:0.80;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+
+
+        background-attachment:fixed;
+      }
+
+      .pimg1{
+        background-image:url('../img/trening2.jpg');
+        min-height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .pimg2{
+        background-image:url('../img/trening3.jpg');
+        min-height:400px;
+      }
+
+      .pimg3{
+        background-image:url('../img/trening4.jpg');
+        min-height:400px;
+      }
+
+      .pimg4{
+        background-image:url('../img/trening2.jpg');
+        min-height:550px;
+      }
+
+
+
+@media(max-width:568px){
+        .pimg1, .pimg2, .pimg3, .pimg4{
+          background-attachment:scroll;
+        }
+      }
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#fff;
+  color:black;
+}
+
+
+.section-blue{
+  background-color: darkgrey;
+  color:black;
+  padding-top: 100px;
+}
+
+
+    .text-One {
+
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .text-Two {
+
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+
+    .text-Three {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+
+    .text-Four {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    /* Footer start--> */
+
+    .footer-main-div {
+        width:100% ;
+        height: auto;
+        margin: auto;
+        background-color: #222222 ;
+        padding: 20px 0;
+    }
+
+    .footer-social-icons {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .footer-social-icons ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-social-icons ul li {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 50px;
+        border-radius: 100%;
+    }
+
+    .footer-social-icons ul li a {
+        display: block;
+    }
+
+    .footer-menu-one {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .footer-menu-one ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-menu-one ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .footer-menu-one ul li a {
+        font-family: "Work Sans", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: dimgrey;
+        text-transform: uppercase ;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        background-color: #222222;
+        padding: 5px;
+    }
+
+    .footer-bottom p{
+        font-family: "Work Sans", Arial, sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
