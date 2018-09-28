@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oppgave 2</title>
+</head>
+<body>
+
+<canvas id="minCanvas" height="300" width="300"></canvas>
+
+<script>
+
+    var canvas = document.getElementById("minCanvas");
+    var ctx = canvas.getContext("2d");
+
+
+    var xPosStart = 0;
+    var xPosSlutt = 300;
+    var yPos = 0;
+
+    while (yPos<300) {
+        ctx.moveTo(xPosStart, yPos);
+        ctx.lineTo(xPosSlutt, yPos);
+        ctx.stroke();
+        yPos = yPos + 10;
+    }
+
+
+</script>
+
+</body>
+</html>
