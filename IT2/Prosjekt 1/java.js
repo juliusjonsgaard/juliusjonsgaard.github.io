@@ -89,9 +89,9 @@ function game(brukerValg) {
 
 const resetScores = () => {
     dataScore= 0;
-    dataScore.innerHTML = computerScore
+    dataScore.innerHTML = dataScore
     brukerScore = 0;
-    brukerScore.innerHTML = userScore;
+    brukerScore.innerHTML = brukerScore;
 };
 
 // denne function lager en eventlistener for stein, saks og papir.
