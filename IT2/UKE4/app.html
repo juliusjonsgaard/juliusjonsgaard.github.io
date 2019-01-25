@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oppgave 1</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        #inpSpm {
+            width: 200px;
+            height: 20px;
+            border-radius: 5%;
+        }
+
+        #inpNavn {
+            width: 150px;
+            height: 20px;
+            border-radius: 5%;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Jeg trenger hjelp</h1>
+
+
+<input type="text" id="inpNavn" placeholder="Ditt navn" >
+<input type="text" id="inpSpm" placeholder="Hva trenger du hjelp med?" >
+<ul id="spørsmål">
+
+</ul>
+
+<script>
+
+    const spm = [];
+
+    const visSpm = () => {
+        spørsmål.innerHTML = ""; //vi nuller ut handlelisten
+        for (const vare of spm) {
+            spørsmål.innerHTML += `
+                 <li>
+                     ${vare}
+                </li>
+            `;
+        }
+    }
+
+
+
+    inpSpm.onchange = () => {
+        spm.push(inpSpm.value);
+        visSpm();
+
+        inpSpm.value = "";
+    }
+
+</script>
+
+
+
+</body>
+</html>
